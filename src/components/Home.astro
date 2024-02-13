@@ -1,3 +1,61 @@
-<section class="flex items-center h-[800px]" id="home">
-  <h3>Home Section</h3>
+---
+import DownloadIcon from "@/components/icons/DownloadIcon.astro";
+import EmailIcon from "@/components/icons/EmailIcon.astro";
+import GitHubIcon from "@/components/icons/GitHubIcon.astro";
+import LinkedInIcon from "@/components/icons/LinkedInIcon.astro";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon.astro";
+---
+
+<section
+  class="flex flex-row items-center justify-center gap-7 mt-24 w-[800px]"
+  id="home"
+>
+  <div class="flex flex-col items-center justify-center gap-5">
+    <img
+      src="./urielrc.webp"
+      alt="Uriel RC personal photo"
+      class="w-64 h-64 object-contain border-8 bg-urcp-moonstone border-urcp-gunmetal rounded-full"
+    />
+    <ul class="flex flex-row gap-2">
+      <li>
+        <a
+          class="w-fit flex items-center justify-center gap-1 px-3 py-1 hover:bg-urcp-midnightg/70 hover:rounded-full hover:scale-110 hover:transition hover:ease-in-out hover:duration-400"
+          href="/"><GitHubIcon /></a
+        >
+      </li>
+      <li>
+        <a
+          class="w-fit flex items-center justify-center gap-1 px-3 py-1 hover:bg-urcp-midnightg/70 hover:rounded-full hover:scale-110 hover:transition hover:ease-in-out hover:duration-400"
+          href="/"><LinkedInIcon /></a
+        >
+      </li>
+      <li>
+        <a
+          class="w-fit flex items-center justify-center gap-1 px-3 py-1 hover:bg-urcp-midnightg/70 hover:rounded-full hover:scale-110 hover:transition hover:ease-in-out hover:duration-400"
+          href="/"><EmailIcon /></a
+        >
+      </li>
+      <li>
+        <a
+          class="w-fit flex items-center justify-center gap-1 px-3 py-1 hover:bg-urcp-midnightg/70 hover:rounded-full hover:scale-110 hover:transition hover:ease-in-out hover:duration-400"
+          href="/"><WhatsAppIcon /></a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="w-[480px] flex flex-col gap-5 text-balance text-lg font-thin">
+    <p class="text-xl font-bold">Hi there! 👋🏾 I'm Uriel Roman</p>
+    <p>
+      Front End Developer with +2 years of experience creating and designing
+      user interfaces.
+    </p>
+    <p>
+      Autodidact with highly interest in working with<br /> new technologies.
+    </p>
+    <span class="border border-urcp-eerienb w-[380px]"></span>
+    <button
+      class="flex items-center justify-start gap-2 rounded-full bg-urcp-moonstone w-fit px-3 py-1 text-sm font-regular hover:bg-urcp-midnightg/70 hover:rounded-full hover:scale-110 hover:transition hover:ease-in-out hover:duration-400"
+      ><DownloadIcon />Download Resume</button
+    >
+  </div>
 </section>
