@@ -1,3 +1,31 @@
-<section class="flex items-center h-[800px]" id="about">
-  <h3>About Section</h3>
+---
+import Education from "@/components/Education.astro";
+---
+
+<section class="mt-16 w-[800px]" id="about">
+  <div class="ml-12 w-[700px]">
+    <h3 class="text-3xl font-bold">About</h3>
+    <article class="mt-3 flex flex-col gap-5 text-left text-lg">
+      <p>
+        My name is Uriel Roman but also my friends known me as <span
+          class="font-bold">Sanghur</span
+        > or <span class="font-bold">Romanou</span>
+        thanks my nickname in videogames. My favorite videogame franchise is <span
+          class="font-bold">Halo</span
+        >. I have a siamese cat named 'Cookie'.
+      </p>
+      <p>
+        I started use a computer when I was 4 and 21 years later I really love
+        to work with it every morning.I'm an IT Engineer graduated in 2020. In
+        my career I use some new technologies like AdonisJS and other more
+        common like VueJS.
+      </p>
+      <p>
+        Some of my achievements are contributed in projects in differents
+        topics, knowledge management systems, POS systems and developed and
+        designed SPA's.
+      </p>
+    </article>
+    <Education />
+  </div>
 </section>
