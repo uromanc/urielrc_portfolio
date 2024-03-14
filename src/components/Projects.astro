@@ -1,3 +1,37 @@
-<section class="flex items-center h-[800px]" id="projects">
-  <h3>Projects Section</h3>
+---
+import Card from "./Card.astro";
+---
+
+<section class="mt-16 w-[800px]" id="projects">
+  <div class="ml-12">
+    <h1 class="text-3xl font-bold">Projects</h1>
+    <ul
+      class="list-none mt-3 grid grid-cols-2 grid-rows-3 justify-evenly items-center gap-20"
+    >
+      <Card
+        src="./build-selector_preview.webp"
+        title="Path of Exile - Build Selector"
+        body="Tool for choosing your starter build in the ARPG game PoE from GGG."
+        footer="Created with VanillaJS, CSS & Chart.js."
+        repo="https://github.com/uromanc/build-selector"
+        url="https://buildselectorpoe.netlify.app/"
+      />
+      <Card
+        src="./weather-app_preview.webp"
+        title="Weather App"
+        body="Web app for see weather forecast in a determinate city."
+        footer="Created with Vite, VueJS, Tailwind CSS & Weather API."
+        repo="https://github.com/uromanc/weather-app"
+        url="https://uroweatherapp.netlify.app/"
+      />
+      <Card
+        src="./gif-browser_preview.webp"
+        title="GIF Browser App"
+        body="Web app for search gif from a determinate topic."
+        footer="Created with Vite, ReactJS & CSS."
+        repo="https://github.com/uromanc/react-gifexpert"
+        url="https://urogifexpertapp.netlify.app/"
+      />
+    </ul>
+  </div>
 </section>
